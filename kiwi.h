@@ -6,6 +6,9 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+#include "kwframework/modules/input.c"
+#include "kwframework/modules/iinput.c"
+
 void kw_init() {
     FILE *config_file = fopen("kiwi.conf", "r");
     if (config_file == NULL) {
@@ -23,6 +26,12 @@ void kw_init() {
         fprintf(stderr, "Warning: Temporary directory '%s' does not exist.\n", temp_dir);
     } else {
         printf("Temporary directory '%s' is accessible.\n", temp_dir);
+    }
+    const char *modules_dir = "./kwframework/modules";
+    if (access(temp_dir, F_OK) == -1) {
+        fprintf(stderr, "Warning: Modules directory '%s' does not exist.\n", modules_dir);
+    } else {
+        printf("[✅] - Modules directory '%s' is accessible.\n", temp_dir);
     }
 }
 
