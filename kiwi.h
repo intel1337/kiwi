@@ -15,9 +15,10 @@ void kw_init() {
     } else {
         printf("Configuration file found: 'kiwi.conf'.\n");
         fclose(config_file);
+        system("clear");
     }
 
-    const char *temp_dir = "/kwframework/tmp";
+    const char *temp_dir = "./kwframework/tmp";
     if (access(temp_dir, F_OK) == -1) {
         fprintf(stderr, "Warning: Temporary directory '%s' does not exist.\n", temp_dir);
     } else {
