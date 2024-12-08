@@ -2,7 +2,8 @@
 <h1 align="center">kiwi. - The Best C framework to gain time.</h1>
 
 <p align="center">
-  <img src="adev/src/assets/images/press-kit/angular_icon_gradient.gif" alt="angular-logo" width="120px" height="120px"/>
+
+![logo](https://github.com/user-attachments/assets/a2b6186a-28d6-4700-94ab-b7c4712f6dde)
   <br>
   <em>Kiwi is a high-performance, lightweight C framework designed to simplify and accelerate development. With a rich set of optimized, easy-to-use functions
     </em>
