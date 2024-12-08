@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://angular.dev/"><strong>angular.dev</strong></a>
+  <a href="https://kiwiframework.dev/"><strong>kiwiframework.dev</strong></a>
   <br>
 </p>
 
