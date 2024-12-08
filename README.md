@@ -16,7 +16,7 @@
 <p align="center">
   <a href="CONTRIBUTING.md">Contributing Guidelines</a>
   ·
-  <a href="[https://github.com/intel1337/kiwi/issues]">Submit an Issue</a>
+  <a href="[[https://github.com/intel1337/kiwi/issues]](https://github.com/intel1337/kiwi/issues)">Submit an Issue</a>
   ·
   <a href="https://blog.angular.dev/">Blog</a>
   <br>
