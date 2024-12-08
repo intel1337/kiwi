@@ -5,7 +5,7 @@
   <img src="adev/src/assets/images/press-kit/angular_icon_gradient.gif" alt="angular-logo" width="120px" height="120px"/>
   <br>
   <em>Kiwi is a high-performance, lightweight C framework designed to simplify and accelerate development. With a rich set of optimized, easy-to-use functions
-    <br> using TypeScript/JavaScript and other languages.</em>
+    </em>
   <br>
 </p>
 
