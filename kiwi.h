@@ -23,13 +23,13 @@ void kw_init() {
 
     const char *temp_dir = "./kwframework/tmp";
     if (access(temp_dir, F_OK) == -1) {
-        fprintf(stderr, "Warning: Temporary directory '%s' does not exist.\n", temp_dir);
+        fprintf(stderr, "[⚠️] - Warning: Temporary directory '%s' does not exist.\n", temp_dir);
     } else {
-        printf("Temporary directory '%s' is accessible.\n", temp_dir);
+        printf("[✅] - Temporary directory '%s' is accessible.\n", temp_dir);
     }
     const char *modules_dir = "./kwframework/modules";
     if (access(temp_dir, F_OK) == -1) {
-        fprintf(stderr, "Warning: Modules directory '%s' does not exist.\n", modules_dir);
+        fprintf(stderr, "[⚠️] - Warning: Modules directory '%s' does not exist.\n", modules_dir);
     } else {
         printf("[✅] - Modules directory '%s' is accessible.\n", temp_dir);
     }
