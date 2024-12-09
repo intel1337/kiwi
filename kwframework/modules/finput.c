@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 
-int iinput(char prompt[], float* var, int size) {
+float finput(char prompt[], float* var, int size) {
     printf("%s", prompt);
-    char input[size];
-    fgets(input, size, stdin);
-    *var = atof(input);
+    char inqput[size];
+    fgets(inqput, size, stdin);
+    *var = atof(inqput);
 
 }
 
