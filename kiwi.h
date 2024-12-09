@@ -7,10 +7,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 // #include TEST
-#include "kwframework/modules/input.c"
-#include "kwframework/modules/iinput.c"
-#include "kwframework/modules/finput.c"
-#include "kwframework/modules/msleep.c"
+#include "kwframework/modules/fastlib.h"
 #include "kwframework/gti/loadbar.c"
 #include "kwframework/gti/loadperc.c"
 #include "kwframework/gti/etc.c"

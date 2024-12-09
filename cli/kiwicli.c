@@ -4,6 +4,8 @@
 #include <string.h>
 #include <stdlib.h>
 
+#define CLI_VERSION "v0.0.1\n"
+
 
 
 void msleep(int milliseconds)
@@ -27,6 +29,9 @@ int main() {
 
     bool running = true;
     char input[BUFSIZ];
+    char* project_name;
+    char* makedir = "mkdir ";
+    char* cd = "cd";
     
     while(running){
         menu();
@@ -34,31 +39,22 @@ int main() {
         printf("kiwi@cli:~$");
         fgets(input, sizeof(input), stdin);
         input[strcspn(input, "\n")] = 0; 
-
+        fflush(stdout);
         if (strcmp(input, "newproject") == 0) {
             printf("Name of the project: ");
-            char project_name[100];
-            fgets(project_name,100,stdin);
-            project_name[strcspn(project_name, "\n")] = 0;
-            char* makedir = "mkdir";
-            char* cd = "cd";
+            scanf("%s", &project_name);
+          
             strcat(cd,project_name);
             strcat(makedir, project_name);
-            system(makedir);
-            system(cd);
-            printf("Initialize git ? Y/n");
-            char git_init[2];
-            fgets(git_init,2,stdin);
-            git_init[strcspn(git_init, "\n")] = 0;
-            if(strcspn(git_init,"y")){
-                system("git init");
-            }
-            else{
-                printf("git was not initialized..\n");
-            }
+            system(makedir);  
         }
-
-
+        else if(strcmp(input, "version")==0){
+            printf("Version : "CLI_VERSION);
+            printf("Press Enter to continue...");
+            getchar();
+            system("clear");
+            fflush(stdout);
+        }
     }
     return 0;
 }
