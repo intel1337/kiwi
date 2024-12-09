@@ -8,6 +8,7 @@
 
 #include "kwframework/modules/input.c"
 #include "kwframework/modules/iinput.c"
+#include "kwframework/modules/msleep.c"
 
 void kw_init() {
     FILE *config_file = fopen("kiwi.conf", "r");
