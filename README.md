@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="logo" style="display: block; margin: auto;">
   <br>
-  <em>Kiwi is a high-performance, lightweight C framework designed to simplify and accelerate development. With a rich set of optimized, easy-to-use functions
+  <em>Cimplify is a high-performance, lightweight C framework designed to simplify and accelerate development. With a rich set of optimized, easy-to-use functions
     </em>
   <br>
 </p>
